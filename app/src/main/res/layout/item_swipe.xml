@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/swipe_action_bg_blue"
+        android:text="测试颜色"
+        android:gravity="center"
+        />
+    <com.lotus.xlistview.swipe.SwipeView
+        android:id="@+id/swipeview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/swipe_action_bg_orange"
+                android:text="Item1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:layout_marginBottom="70dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:textColor="@color/swipe_action_bg_orange"
+                android:text="Item2"
+                android:gravity="center"
+                />
+        </FrameLayout>
+        <include
+            android:id="@+id/action"
+            layout="@layout/swipe_action_layout"
+           />
+
+    </com.lotus.xlistview.swipe.SwipeView>
+
+</LinearLayout>
