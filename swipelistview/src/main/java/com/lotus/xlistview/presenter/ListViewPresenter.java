@@ -97,7 +97,7 @@ public class ListViewPresenter<T extends IListBean> implements XListView.IXListV
         checkData();
     }
 
-    private String getTime() {
+    private String getTime() {  
         return new SimpleDateFormat("MM-dd HH:mm", Locale.CHINA).format(new Date());
     }
 
